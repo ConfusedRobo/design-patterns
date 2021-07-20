@@ -1,6 +1,6 @@
 package strategy.race.controller;
 
-public interface ScoreBoardAlgorithm {
+public interface ScoreAlgorithm {
     int calculate(int distance);
     String model();
 }

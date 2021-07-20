@@ -1,8 +1,8 @@
 package strategy.race.model;
 
-import strategy.race.controller.ScoreBoardAlgorithm;
+import strategy.race.controller.ScoreAlgorithm;
 
-public class BMW implements ScoreBoardAlgorithm {
+public class BMW implements ScoreAlgorithm {
     private final int topSpeed;
     public final String modelName;
 
