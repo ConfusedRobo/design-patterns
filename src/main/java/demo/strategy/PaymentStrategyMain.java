@@ -1,9 +1,9 @@
 package demo.strategy;
 
-import strategy.payment.controller.CreditCardAlgorithm;
-import strategy.payment.controller.PaypalAlgorithm;
-import strategy.payment.controller.ShoppingCart;
-import strategy.payment.model.Product;
+import strategy.payment.controllers.CreditCardAlgorithm;
+import strategy.payment.controllers.PaypalAlgorithm;
+import strategy.payment.controllers.ShoppingCart;
+import strategy.payment.models.Product;
 
 public class PaymentStrategyMain {
 

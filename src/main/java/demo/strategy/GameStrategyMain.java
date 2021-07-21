@@ -1,9 +1,9 @@
 package demo.strategy;
 
-import strategy.game.controller.ScoreBoard;
-import strategy.game.model.Balloon;
-import strategy.game.model.Clown;
-import strategy.game.model.SquareBalloon;
+import strategy.game.controllers.ScoreBoard;
+import strategy.game.models.Balloon;
+import strategy.game.models.Clown;
+import strategy.game.models.SquareBalloon;
 
 public class GameStrategyMain {
 

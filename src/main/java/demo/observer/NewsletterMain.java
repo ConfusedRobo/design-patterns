@@ -1,7 +1,7 @@
 package demo.observer;
 
-import observer.model.CatsTopic;
-import observer.model.EmailTopicSubscriber;
+import observer.newsletter.models.CatsTopic;
+import observer.newsletter.models.NewsletterSubscriber;
 
 import static java.lang.System.out;
 
@@ -9,24 +9,23 @@ public class NewsletterMain {
 
     public static void main(String... args) {
         var topic = new CatsTopic();
-        var firstObserver = new EmailTopicSubscriber("First Subscriber");
-        var secondObserver = new EmailTopicSubscriber("Second Subscriber");
-        var thirdObserver = new EmailTopicSubscriber("Third Subscriber");
+        var firstSubscriber = new NewsletterSubscriber("First Subscriber");
+        var secondSubscriber = new NewsletterSubscriber("Second Subscriber");
+        var thirdSubscriber = new NewsletterSubscriber("Third Subscriber");
 
-        topic.register(firstObserver);
-        topic.register(secondObserver);
-        topic.register(thirdObserver);
+        firstSubscriber.subscribeTo(topic);
+        secondSubscriber.subscribeTo(topic);
+        thirdSubscriber.subscribeTo(topic);
 
-        firstObserver.setTopic(topic);
-        secondObserver.setTopic(topic);
-        thirdObserver.setTopic(topic);
+        topic.register(firstSubscriber);
+        topic.register(secondSubscriber);
+        topic.register(thirdSubscriber);
 
-        firstObserver.update();
         topic.postMessage("Hello, World!");
-        topic.unregister(secondObserver);
+        firstSubscriber.update();
+        topic.unregister(secondSubscriber);
 
         out.println("======================================================================");
-        thirdObserver.update();
-        out.println("Get update: " + topic.getUpdate(secondObserver));
+        thirdSubscriber.update();
     }
 }

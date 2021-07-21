@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>strategy.game.controller</OriginalElement>
+  <OriginalElement>strategy.game.controllers</OriginalElement>
   <nodes>
-    <node x="0.0" y="106.0">strategy.game.controller.ScoreBoard</node>
-    <node x="258.0" y="117.5">strategy.game.model.Clown</node>
-    <node x="462.0" y="117.5">strategy.game.model.SquareBalloon</node>
-    <node x="259.07142857142856" y="0.0">strategy.game.controller.ScoreAlgorithmBase</node>
-    <node x="666.0" y="117.5">strategy.game.model.Balloon</node>
+    <node x="0.0" y="106.0">strategy.game.controllers.ScoreBoard</node>
+    <node x="258.0" y="117.5">strategy.game.models.Clown</node>
+    <node x="462.0" y="117.5">strategy.game.models.SquareBalloon</node>
+    <node x="259.07142857142856" y="0.0">strategy.game.controllers.ScoreAlgorithmBase</node>
+    <node x="666.0" y="117.5">strategy.game.models.Balloon</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="strategy.game.model.Clown" target="strategy.game.controller.ScoreAlgorithmBase" relationship="REALIZATION">
+    <edge source="strategy.game.models.Clown" target="strategy.game.controllers.ScoreAlgorithmBase" relationship="REALIZATION">
       <point x="0.0" y="-39.5" />
       <point x="350.0" y="86.0" />
       <point x="554.0" y="86.0" />
@@ -19,19 +19,19 @@
       <point x="397.07142857142856" y="76.0" />
       <point x="46.0" y="28.0" />
     </edge>
-    <edge source="strategy.game.model.SquareBalloon" target="strategy.game.controller.ScoreAlgorithmBase" relationship="REALIZATION">
+    <edge source="strategy.game.models.SquareBalloon" target="strategy.game.controllers.ScoreAlgorithmBase" relationship="REALIZATION">
       <point x="0.0" y="-39.5" />
       <point x="554.0" y="76.0" />
       <point x="397.07142857142856" y="76.0" />
       <point x="46.0" y="28.0" />
     </edge>
-    <edge source="strategy.game.controller.ScoreBoard" target="strategy.game.controller.ScoreAlgorithmBase" relationship="TO_ONE">
+    <edge source="strategy.game.controllers.ScoreBoard" target="strategy.game.controllers.ScoreAlgorithmBase" relationship="TO_ONE">
       <point x="0.0" y="-51.0" />
       <point x="119.0" y="86.0" />
       <point x="305.07142857142856" y="86.0" />
       <point x="-46.0" y="28.0" />
     </edge>
-    <edge source="strategy.game.model.Balloon" target="strategy.game.controller.ScoreAlgorithmBase" relationship="REALIZATION">
+    <edge source="strategy.game.models.Balloon" target="strategy.game.controllers.ScoreAlgorithmBase" relationship="REALIZATION">
       <point x="0.0" y="-39.5" />
       <point x="758.0" y="86.0" />
       <point x="554.0" y="86.0" />

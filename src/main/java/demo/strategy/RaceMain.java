@@ -1,9 +1,9 @@
 package demo.strategy;
 
-import strategy.race.controller.ScoreBoard;
-import strategy.race.model.Audi;
-import strategy.race.model.BMW;
-import strategy.race.model.Mercedes;
+import strategy.race.controllers.ScoreBoard;
+import strategy.race.models.Audi;
+import strategy.race.models.BMW;
+import strategy.race.models.Mercedes;
 
 import static java.lang.System.out;
 
