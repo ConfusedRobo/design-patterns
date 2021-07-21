@@ -19,5 +19,5 @@ public class EmailTopicSubscriber implements Subscriber {
     }
 
     @Override
-    public void setSubject(Topic topic) { this.topic = topic; }
+    public void setTopic(Topic topic) { this.topic = topic; }
 }

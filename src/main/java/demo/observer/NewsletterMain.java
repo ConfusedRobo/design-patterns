@@ -17,9 +17,9 @@ public class NewsletterMain {
         topic.register(secondObserver);
         topic.register(thirdObserver);
 
-        firstObserver.setSubject(topic);
-        secondObserver.setSubject(topic);
-        thirdObserver.setSubject(topic);
+        firstObserver.setTopic(topic);
+        secondObserver.setTopic(topic);
+        thirdObserver.setTopic(topic);
 
         firstObserver.update();
         topic.postMessage("Hello, World!");
