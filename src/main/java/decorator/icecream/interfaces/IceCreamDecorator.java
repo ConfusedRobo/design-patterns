@@ -1,0 +1,10 @@
+package decorator.icecream.interfaces;
+
+public class IceCreamDecorator implements IceCream {
+    private final IceCream iceCream;
+
+    public IceCreamDecorator(IceCream iceCream) { this.iceCream = iceCream; }
+
+    @Override
+    public double cost() { return iceCream.cost(); }
+}
