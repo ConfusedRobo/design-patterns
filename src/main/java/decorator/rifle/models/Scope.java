@@ -18,7 +18,5 @@ public class Scope extends RifleDecorator {
     public double weight() { return super.weight() + 1.55; }
 
     @Override
-    public int components() {
-        return super.components() + 1;
-    }
+    public int components() { return super.components() + 1; }
 }

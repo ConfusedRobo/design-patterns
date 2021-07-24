@@ -18,7 +18,5 @@ public class Explosive extends RifleDecorator {
     public double weight() { return super.weight() + 2.00; }
 
     @Override
-    public int components() {
-        return super.components() + 1;
-    }
+    public int components() { return super.components() + 1; }
 }
