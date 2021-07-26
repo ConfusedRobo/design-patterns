@@ -1,4 +1,4 @@
-package demo.simplefactory.hamburger;
+package demo.factory.burger;
 
 import factory.burger.stores.JamaicanBurgerStore;
 import factory.burger.stores.MozambicanBurgerStore;
