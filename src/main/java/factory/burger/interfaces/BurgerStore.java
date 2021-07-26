@@ -1,8 +1,6 @@
-package simplefactory.burger.interfaces;
+package factory.burger.interfaces;
 
-import simplefactory.burger.models.Hamburger;
-
-public abstract class HamburgerStore {
+public abstract class BurgerStore {
     public Hamburger orderHamburger(String type) {
         var burger = createHamburger(type);
         burger.prepare();

@@ -1,4 +1,4 @@
-package simplefactory.burger.models;
+package factory.burger.interfaces;
 
 import static java.lang.System.out;
 
