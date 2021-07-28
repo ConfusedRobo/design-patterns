@@ -3,9 +3,9 @@ package command.gameboy.model.mario;
 import command.gameboy.interfaces.Command;
 
 public class MarioUpCommand implements Command {
-    private final MarioCharacterReceiver receiver;
+    private final MarioCharacter receiver;
 
-    public MarioUpCommand(MarioCharacterReceiver receiver) { this.receiver = receiver; }
+    public MarioUpCommand(MarioCharacter receiver) { this.receiver = receiver; }
 
     @Override
     public void execute() { receiver.moveUp(); }

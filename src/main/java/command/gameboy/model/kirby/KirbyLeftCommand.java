@@ -3,9 +3,9 @@ package command.gameboy.model.kirby;
 import command.gameboy.interfaces.Command;
 
 public class KirbyLeftCommand implements Command {
-    private final KirbyCharacterReceiver receiver;
+    private final KirbyCharacter receiver;
 
-    public KirbyLeftCommand(KirbyCharacterReceiver receiver) { this.receiver = receiver; }
+    public KirbyLeftCommand(KirbyCharacter receiver) { this.receiver = receiver; }
 
     @Override
     public void execute() { receiver.moveLeft(); }

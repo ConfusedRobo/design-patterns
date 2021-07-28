@@ -2,10 +2,10 @@ package command.gameboy.model.kirby;
 
 import static java.lang.System.out;
 
-public class KirbyCharacterReceiver {
+public class KirbyCharacter {
     private final String name;
 
-    public KirbyCharacterReceiver(String name) { this.name = name; }
+    public KirbyCharacter(String name) { this.name = name; }
 
     public void moveUp() { out.println(name + " is jumping up!"); }
 

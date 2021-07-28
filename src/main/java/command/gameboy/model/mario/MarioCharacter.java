@@ -2,10 +2,10 @@ package command.gameboy.model.mario;
 
 import static java.lang.System.out;
 
-public class MarioCharacterReceiver {
+public class MarioCharacter {
     private final String name;
 
-    public MarioCharacterReceiver(String name) { this.name = name; }
+    public MarioCharacter(String name) { this.name = name; }
 
     public void moveUp() { out.println(name + " is jumping up!"); }
 
